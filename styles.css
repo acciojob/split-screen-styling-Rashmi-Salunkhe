@@ -1,1 +1,78 @@
 /*  your css code here. If applicable */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar (Navigation) */
+.sidebar {
+    background-color: #D7E8D4;
+    width: 16.66%; /* 1/6th of the viewport width */
+    padding: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin-bottom: 1em;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Content Area */
+.main-content {
+    width: 83.34%; /* Remaining 5/6th of the viewport width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: yellowgreen;
+    padding: 1em;
+    height: 20vh; /* 1/5th of the viewport height */
+    text-align: center;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+/* Article Section */
+article {
+    background-color: #f4f4f4;
+    width: 75%; /* 3/4th of the content section */
+    padding: 1em;
+    min-height: 60vh;
+}
+
+/* Aside Section */
+aside {
+    background-color: #e2e2e2;
+    width: 25%; /* 1/4th of the content section */
+    padding: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: yellowgreen;
+    padding: 1em;
+    height: 20vh; /* 1/5th of the viewport height */
+    text-align: center;
+}
